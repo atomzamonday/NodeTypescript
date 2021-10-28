@@ -10,10 +10,11 @@
     "dev": "nodemon ./src/index.ts",
     "start": "node build/index.js",
     "fix:script": "chmod +x build.sh deploy-docker.sh",
-    "build": "bash build.sh",
-    "deploy:docker": "bash deploy-docker.sh",
+    "build": "./build.sh",
+    "deploy": "./deploy-docker.sh",
     "clean": "rm -rf build tmp",
-    "type": "tsc --noEmit"
+    "type": "tsc --noEmit",
+    "clean-git": "rm -rf ./git"
   },
   "dependencies": {
     "dotenv": "^10.0.0"

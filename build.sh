@@ -1,4 +1,8 @@
 rm -rf ./build;
-tsc;
-node build.js;
+if tsc
+then
+  node build.js;
+else
+  echo "build failed."
+fi
 rm -rf ./tmp;

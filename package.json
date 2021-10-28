@@ -9,8 +9,9 @@
   "scripts": {
     "dev": "nodemon ./src/index.ts",
     "start": "node build/index.js",
-    "fix:build.sh": "chmod +x build.sh",
-    "build": "./build.sh",
+    "fix:script": "chmod +x build.sh deploy-docker.sh",
+    "build": "bash build.sh",
+    "deploy:docker": "bash deploy-docker.sh",
     "clean": "rm -rf build tmp",
     "type": "tsc --noEmit"
   },

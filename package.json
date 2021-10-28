@@ -12,7 +12,7 @@
     "fix:build.sh": "chmod +x build.sh",
     "build": "./build.sh",
     "clean": "rm -rf build tmp",
-    "check": "tsc"
+    "type": "tsc --noEmit"
   },
   "dependencies": {
     "dotenv": "^10.0.0"
